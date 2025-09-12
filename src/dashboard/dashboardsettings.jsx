@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../component/sidebar";
+import { Link } from "react-router-dom";
 
 function DashboardSetting() {
   return (
@@ -12,9 +13,11 @@ function DashboardSetting() {
         {/* Top Navbar */}
         <header className="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-10">
           <h1 className="text-xl font-semibold text-red-700">Settings</h1>
-          <button className="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition">
-            Logout
-          </button>
+          <Link to="/">
+            <button className="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition">
+              Logout
+            </button>
+          </Link>
         </header>
 
         {/* Content */}
