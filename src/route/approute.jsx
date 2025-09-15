@@ -14,12 +14,12 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path='/dashboard/home' element={<Home />} /> */}
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/needblood' element={<NeedBlood />} />
         <Route path='/donate' element={<Donate />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/' element={<AdminLogin />} />
+        <Route path='/admin' element={<AdminLogin />} />
         <Route path='/dashboard/home' element={<DashboardHome />} />
         <Route path='/dashboard/donors' element={<ManageDonors />} />
         <Route path='/dashboard/requests' element={<ManageRequests />} />

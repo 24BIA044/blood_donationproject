@@ -24,48 +24,25 @@ function Donate() {
           <h3 className="text-2xl font-bold text-center text-red-700 mb-6">
             Become a Donor
           </h3>
-          <form className="space-y-4">
-            <div>
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Blood Group (e.g., A+, O-)"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-red-700 text-white py-2 rounded-lg shadow-md hover:bg-red-800 transition"
-            >
-              Submit
-            </button>
+          <form id="donor-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="number" placeholder="Age" min={18} required />
+            <input type="text" placeholder="Blood Type (e.g. A+)" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <input type="date" placeholder="Last Donation Date" />
+            <button type="submit">Save Donor</button>
           </form>
+
         </div>
       </main>
 
-      {/* Contact Section */}
+      {/* {/* Contact Section
       <section className="mt-20 px-6 max-w-6xl mx-auto">
         <h2 className="text-2xl font-semibold text-red-700 text-center mb-8">
           Contact Us
         </h2>
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="text-gray-700">
+          <div className
             <p className="mb-4">
               Have questions or want to get involved? Reach out to us anytime.
             </p>
@@ -78,8 +55,8 @@ function Donate() {
             className="w-72 mx-auto"
           />
         </div>
-      </section>
-    </div>
+      </section> */}
+     </div> 
   );
 }
 
