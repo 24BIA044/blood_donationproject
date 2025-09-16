@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #c62828;
+    margin-bottom: 40px;
+}
+
+.form-section {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+Link{
+    text-decoration: none;
+    
+}
